@@ -6,7 +6,7 @@ NEXTCLOUD_DIR="/var/www/nextcloud"
 # Custom jobs dir
 JOBS_DIR="/var/www/nextcloud/scripts"  # <-- À adapter (ex: /opt/nextcloud-jobs)
 
-# STEP1 1 : Launching PHP cronjob (default nextcloud cronjob) 
+# [STEP 1]: Launching PHP cronjob (default nextcloud cronjob) 
 echo "=== [STEP1 1]: Launching PHP cronjob (default nextcloud cronjob) ==="
 cd "$NEXTCLOUD_DIR" || {
   echo "[CRITICAL]: Impossible d'accéder à $NEXTCLOUD_DIR"
@@ -17,7 +17,7 @@ if ! php -f cron.php; then
   echo "[ERROR]: Error while executing cron.php. Continuing..."
 fi
 
-# [STEP2 2]: Executing custom jobs from JOBS_DIR
+# [STEP 2]: Executing custom jobs from JOBS_DIR
 echo "=== [STEP2 2]: Executing custom jobs from JOBS_DIR ==="
 
 # Lists all scripts in the jobs solder
