@@ -4,7 +4,7 @@
 NEXTCLOUD_DIR="/var/www/nextcloud"
 
 # Custom jobs dir
-JOBS_DIR="/var/www/nextcloud/scripts"  # <-- À adapter (ex: /opt/nextcloud-jobs)
+JOBS_DIR="/var/www/nextcloud/scripts"  
 
 # [STEP 1]: Launching PHP cronjob (default nextcloud cronjob) 
 echo "=== [STEP1 1]: Launching PHP cronjob (default nextcloud cronjob) ==="
